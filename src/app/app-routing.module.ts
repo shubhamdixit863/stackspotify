@@ -21,11 +21,11 @@ const routes: Routes = [
     component:AboutComponent
   },
   {
-    path:"album",
+    path:"album/:id",
     component:AlbumComponent
   },
   {
-    path:"artist",
+    path:"artist/:id",
     component:ArtistDiscographyComponent
   },
   {

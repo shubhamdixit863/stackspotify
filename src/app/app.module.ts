@@ -14,6 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatChipsModule } from '@angular/material/chips';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutComponent } from './about/about.component';
@@ -22,6 +23,8 @@ import { NewReleasesComponent } from './new-releases/new-releases.component';
 import { AlbumComponent } from './album/album.component';
 
 import { ArtistDiscographyComponent } from './artist-discography/artist-discography.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ MatFormFieldModule,
 MatInputModule,
 MatCardModule,
 MatChipsModule,
-FlexLayoutModule
+FlexLayoutModule,
+HttpClientModule,
+FormsModule,
+MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
